@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import PropertyDetails from "./components/Property";
+import SellProperty from "./components/SellProperty";
 // import Banner from "./components/Banner";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
        <Header/>
        <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/sell" element={<SellProperty/>} />
         <Route path="/property/:id" element={<PropertyDetails/>} />
        </Routes>
        <Footer/>
