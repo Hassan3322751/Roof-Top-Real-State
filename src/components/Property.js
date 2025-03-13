@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import {housesData} from "../data";
 
 const PropertyDetails = () => {
-    const { id } = useParams();
+  const { id } = useParams();
   const property = housesData.find((p) => p.id === parseInt(id));
 
   if (!property) {
